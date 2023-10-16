@@ -1,0 +1,10 @@
+<!-- Stackoverflow Icon -->
+<a href="https://stackoverflow.com/users/5087165/mike-kaufmann" target="_blank">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.7 70.7">
+		<path class="socialMediaBorder" d="M35.4 4.2l31.1 31.1-31.1 31.2L4.2 35.4 35.4 4.2m0-4.2L0 35.4l35.4 35.4 35.4-35.4L35.4 0z"/>
+		<g class="svgFillDarkGrey">
+			<path d="M27.2 36h1.9l-.1 8.4h12.5V36h2v10.4H27.2V36z"/>
+			<path d="M30.3 40.9h9.8V43h-9.8v-2.1zm.2-3.7l9.8.9-.2 2.1-9.8-.9.2-2.1zm.9-4.2l9.5 2.7-.6 2.1-9.4-2.8.5-2zm2.3-4.8l8.4 5.1-1.1 1.8-8.4-5.1 1.1-1.8zm4.8-4.6l5.7 8-1.7 1.2-5.7-8 1.7-1.2z"/>
+		</g>
+	</svg>
+</a>

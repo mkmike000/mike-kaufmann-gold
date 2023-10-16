@@ -1,0 +1,259 @@
+// HOME
+.latestProjectsBox
+	min-width: 400px
+	width: 50%
+	min-height: 120px
+	height: 100%
+	margin: 10px 0
+	padding: 20px 30px 20px 30px
+	border: 2px solid $mk-color-gold
+	background-color: $mk-color-lightGrey
+	position: relative
+	.latestProjectsLogo
+		svg
+			width: 75px
+			height: 75px
+			float: left
+	h2
+		font:
+			family: $mk-font-bold
+			size: 32px
+		color: $mk-color-darkGrey
+		height: 30%
+		width: 80%
+		margin: 20px 0 0 75px
+		text-transform: uppercase
+		@extend .tac
+		// &::after
+		// 	content: '-'
+		// 	font:
+		// 		family: $mk-font-semibold
+		// 		size: 32px
+		// 	color: $mk-color-gold
+		// 	float: right
+		// 	margin-right: -100%
+
+.goto
+	font:
+		family: $mk-font-regular
+		size: 32px
+	color: $mk-color-darkGrey
+	margin: 20px 0 0 50px
+	a
+		font:
+			family: $mk-font-bolditalic
+			size: 32px
+		color: $mk-color-gold
+		text-decoration: underline
+	span
+		margin-left: 20px
+
+// WORK
+#workTopicSelection
+	margin: 15% 0 15% 0
+	@extend .tac
+	.workTopic
+		width: 150px
+		display: inline-block
+		margin: 20px
+		svg
+			width: 50px
+		h2
+			font:
+				family: $mk-font-bolditalic
+				size: 32px
+			color: $mk-color-darkGrey
+
+// WORK INNER'S
+
+// BLOQ
+#searchBar
+	position: absolute
+	right: 0
+	margin: -45px 15% 0 0
+	padding-right: 20px
+	input
+		background-color: transparent
+		border: none
+		font-size: 18px
+		color: $mk-color-darkGrey
+		width: 150px
+		height: 30px
+		right: 0px
+	svg
+		width: 15px
+
+#bloqTopicSelection
+	display: block
+	width: 100%
+	.bloqTopic
+		border: 2px solid $mk-color-gold
+		background-color: $mk-color-lightGrey
+		margin-bottom: 10px
+		height: 120px
+		padding: 40px
+		h2
+			font:
+				family: $mk-font-bold
+				size: 20px
+			color: $mk-color-darkGrey
+			min-width: 300px
+			width: 360px
+			height: 25px
+			margin: 5px 0
+			display: inline-block
+		p
+			font:
+				family: $mk-font-semibold
+				size: 14px
+			color: $mk-color-darkGrey
+			height: 25px
+			margin: 5px 0
+			display: inline-block
+.loadMoreArrow
+	padding-top: 30px
+	@extend .tac
+	svg
+		display: bloc
+		margin: 0 auto
+		transform: rotate(90deg)
+		@extend .tac
+
+// HIRE
+#gons
+	margin-bottom: 50px
+	@extend .tac
+	.bigGons
+		position: relative
+		width: 500px
+		height: 500px
+		margin: 0 300px 0 -300px
+		display: inline-block
+		@extend .tac
+		svg
+			position: absolute
+		p
+			font:
+				family: $mk-font-black
+				size: 64px
+			color: $mk-color-darkGrey
+			position: absolute
+			margin: calc(50% - 40px) 0
+		#print
+			margin-left: calc(50% + 175px)
+		#logo
+			margin-left: calc(50% + 180px)
+		#website
+			margin-left: calc(50% + 130px)
+
+	.miniGons
+		width: 150px
+		height: 500px
+		display: inline-block
+		margin-right: -250px
+		svg
+			width: 150px
+			margin: 7.5px 0
+		p
+			font:
+				family: $mk-font-black
+				size: 64px
+			color: $mk-color-darkGrey
+			position: absolute
+			margin-top: -127.5px
+			margin-left: 55px
+		#w
+			margin-left: 48px
+
+.lel
+	background-color: $mk-color-lightGrey
+	border: 2px solid $mk-color-gold
+	font:
+		family: $mk-font-regular
+		size: 18px
+	color: $mk-color-darkGrey
+	width: 100%
+	margin: 40px auto
+	padding: 50px
+	h1
+		font:
+			family: $mk-font-bold
+			size: 36px
+		color: $mk-color-gold
+
+// ABOUT
+#blackBg
+	background-color: $mk-color-darkBlack
+
+.mkProfile
+	img
+		width: 80%
+		margin-left: 7.25%
+	#text
+		border: 2px solid $mk-color-gold
+		font:
+			family: $mk-font-regular
+			size: 18px
+		color: $mk-color-brightGrey
+		width: 47.5%
+		margin: 40px auto 100px auto
+		padding: 50px
+		span
+			font:
+				family: $mk-font-bolditalic
+				size: 18px
+			color: $mk-color-brightGrey
+
+	#skillSet
+		margin: 0 auto
+		width: 47.5%
+		li
+			color: $mk-color-brightGrey
+		p, a
+			font:
+				family: $mk-font-semibold
+				size: 18px
+			color: $mk-color-brightGrey
+			margin-left: 70px
+			a
+				margin-left: 0
+
+// CONTACT
+.contactFormular
+	width: 100%
+	margin-bottom: 100px
+	li
+		width: 100%
+		margin-left: 72px !important
+		span
+			font:
+				family: $mk-font-bold
+				size: 32px
+			color: $mk-color-gold
+	svg
+		width: 45px
+		margin: 0 15px -11px 0
+		display: inline-block
+	#contactMsgIconPosFix
+		margin-bottom: 300px
+	input, textarea, button
+		background-color: $mk-color-lightGrey
+		border: 2px solid $mk-color-gold
+		font:
+			family: $mk-font-regularitalic
+			size: 32px
+		color: $mk-color-darkGrey
+		min-width: 300px
+		width: calc(50% - 75px)
+		margin: 10px
+		padding: 10px 40px
+		display: inline-block
+	button
+		margin-left: 72px
+
+#googleMapsLocation
+	iframe
+		width: 100%
+		height: 100%
+		min-height: 600px
+		border: none

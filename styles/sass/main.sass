@@ -1,0 +1,281 @@
+*
+	font:
+		family: $mk-font-regular, sans-serif
+		size: 12px
+	color: $mk-color-darkBlack
+	box-sizing: border-box
+	-webkit-text-size-adjust: none
+	text-decoration: none
+	list-style-type: none
+	margin: 0
+	padding: 0
+	input, textarea, button
+		resize: none
+		@extend.basic-box
+	&:focus
+		outline-color: $mk-color-white
+		outline: none
+
+html
+	background-color: $mk-color-white
+	//-ms-overflow-style: -ms-autohiding-scrollbar
+	-webkit-text-size-adjust: 100%
+	-ms-text-size-adjust: 100%
+	-moz-osx-font-smoothing: grayscale
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+
+body
+	background-color: $mk-color-white
+
+header
+	width: 100vw
+	height: 100vh
+	text-align: center
+	padding-top: 25px
+	background-color: $mk-color-lightGrey
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%)
+	clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%)
+	user-select: none
+	.burgerNav
+		position: fixed
+		width: 20px
+		height: 20px
+		top: 30px
+		right: 50px
+		cursor: pointer
+		z-index: 2
+	#openedNavigation
+		visibility: hidden
+	.toggleNav
+		visibility: hidden
+	.rLogo
+		display: none
+	ul
+		position: fixed
+		width: 100%
+		height: 30px
+		div
+			display: inline-flex
+			li
+				display: inline-flex
+				min-width: 180px
+				a
+					font:
+						family: $mk-font-semibold
+						size: 18px
+					margin: 0 auto
+				.goldNavBar
+					&:before
+						content: ""
+						position: absolute
+						z-index: -1
+						margin: 11px 0 0 -5px
+						width: 60px
+						height: 2px
+						background-color: #b69625
+				#home
+					&:before
+						width: 57px
+				#work
+					&:before
+						width: 58px
+				#bloq
+					&:before
+						width: 54px
+				#hire
+					&:before
+						width: 47px
+				#about
+					&:before
+						width: 64px
+				#contact
+					&:before
+						width: 82px
+		a
+			padding: 0 40px
+			.mkLogo
+				width: 60px
+				height: 30px
+				margin: 0 0 -9px 2px
+
+	h1
+		text-align: center
+		font:
+			family: $mk-font-blackitalic
+			size: 36px
+		color: $mk-color-darkBlack
+		margin: 150px auto 0 auto
+		min-width: 300px
+		max-width: 500px
+
+main
+	position: relative
+	height: 100%
+	.contentWrapper
+		margin: 100px 7.5%
+		padding: 150px 7.5%
+		content
+			display: initial
+			height: 100%
+			li
+				font:
+					family: $mk-font-bold
+					size: 32px
+				color: $mk-color-darkGrey
+				margin: 20px 0 20px 20px
+				&:before
+					margin: 0 20px
+					content: '•'
+					color: $mk-color-gold
+
+footer
+	background-color: $mk-color-lightGrey
+	width: 100%
+	bottom: 0
+	user-select: none
+	.subFooter
+		display: flex
+		width: 100%
+		padding: 25px 0 25px 0
+		.info
+			width: 100%
+			margin-right: 30px
+			text-align: right
+			user-select: all
+			p
+				font:
+					family: $mk-font-extralight
+					size: 18px
+				color: $mk-color-darkGrey
+			// &:last-of-type
+				// margin-top: 100px
+			span
+				font:
+					family: $mk-font-regular
+					size: 18px
+				color: $mk-color-gold
+
+		.wisdom
+			width: 100%
+			margin: -10px 0 0 50px
+			text-align: left
+			p
+				font:
+					family: $mk-font-bold
+					size: 32px
+				color: $mk-color-darkGrey
+				max-width: 400px
+				// width: 50%
+				margin-left: 30px
+			span
+				font:
+					family: $mk-font-bold
+					size: 32px
+				color: $mk-color-gold
+			.bind
+				margin-left: -40px
+			#wisdomHeadline
+				color: $mk-color-darkGrey
+			.linkArrow
+				transform: rotate(-45deg)
+
+	.socialMedia
+		padding: 25px 0
+		width: 100%
+		text-align: center
+		svg
+			width: 50px
+			margin: 0 30px
+
+	.fooLinks
+		padding: 25px 0
+		text-align: center
+		a, span
+			font:
+				family: $mk-font-light
+				size: 18px
+			color: $mk-color-gold
+		span
+			font-family: $mk-font-bold
+			margin: 0 50px
+
+	.copyright
+		font:
+			family: $mk-font-semibold
+			size: 24px
+		text-align: center
+		padding: 25px 0 50px 0
+		color: $mk-color-darkGrey
+		a
+			font:
+				family: $mk-font-semibold
+				size: 24px
+			color: $mk-color-gold
+		&:before
+			margin: 0 60px 0 0
+			content: '•'
+			color: $mk-color-gold
+		&:after
+			margin: 0 0 0 60px
+			content: '•'
+			color: $mk-color-gold
+
+noscript
+	font-size: 32px
+	text-decoration: underline
+	text-decoration-skip: ink
+	color: $flatui-pomegranate
+	padding: 10px
+
+//MOUSE TEXT SELECTION
+::selection
+	background: lighten($mk-color-gold, 25%)
+
+::-moz-selection
+	background: lighten($mk-color-gold, 25%)
+
+//FORM INPUT TEXT COLORS
+\::-webkit-input-placeholder
+	// font-family: $mk-font-semibold
+	color: $mk-color-darkGrey
+
+\:-moz-placeholder
+	// font-family: $mk-font-semibold
+	color: $mk-color-darkGrey
+
+\::-moz-placeholder
+	// font-family: $mk-font-semibold
+	color: $mk-color-darkGrey
+
+\:-ms-input-placeholder
+	// font-family: $mk-font-semibold
+	color: $mk-color-darkGrey
+
+//HIDE SCROLL BAR
+::-webkit-scrollbar
+	display: none
+
+// MAIN Classes
+// Follow Focus Lines
+.headerFollowFocus
+	position: absolute
+	width: 2px
+	height: 125%
+	transform: rotate(-65deg)
+	background-color: #b69625
+	margin: 12.5% 0 0 50%
+	z-index: 5
+
+.footerFollowFocus
+	position: absolute
+	width: 2px
+	height: 210px
+	background-color: #b69625
+	margin: -50px 0 0 50%
+	z-index: 5
+
+.linkArrow
+	width: 20px
+	height: 16px
+	fill: $mk-color-gold

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+	<g id="hexagon">
+		<polygon class="svgFillBrightGrey" points="13.8,149.7 13.8,50.3 99.9,0.6 186.1,50.3 186.1,149.7 99.9,199.4 	"/>
+		<path class="svgFillGold" d="M99.9,1.2l85.6,49.4v98.8l-85.6,49.4l-85.6-49.4V50.6L99.9,1.2 M99.9,0L13.3,50v100l86.6,50l86.6-50V50
+			L99.9,0L99.9,0z"/>
+	</g>
+</svg>

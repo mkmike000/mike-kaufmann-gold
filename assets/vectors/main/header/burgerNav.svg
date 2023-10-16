@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 25" id="closedNavigation" class="burgerNav">
+	<g>
+		<rect class="svgFillGold" id="one" x="5" y="5" height="2" />
+		<rect class="svgFillGold" id="two" x="5" y="11" height="2" />
+		<rect class="svgFillGold" id="three" x="8" y="17" height="2" />
+	</g>
+
+	<animate
+		xlink:href="#one"
+		attributeName="width"
+		attributeType="CSS"
+		from="0"
+		to="12"
+		begin="1500ms"
+		dur="1500ms"
+    	fill="freeze"
+		restart="never"
+	/>
+
+	<animate
+		xlink:href="#two"
+		attributeName="width"
+		attributeType="CSS"
+		from="0"
+		to="12"
+		begin="1500ms"
+		dur="1s"
+    	fill="freeze"
+		restart="never"
+	/>
+
+	<animate
+		xlink:href="#three"
+		attributeName="width"
+		attributeType="CSS"
+		from="0"
+		to="9"
+		begin="1500ms"
+		dur="500ms"
+    	fill="freeze"
+		restart="never"
+	/>
+
+	<!-- repeatCount="indefinite" -->
+	<!-- begin="circ-anim.end - 3s" -->
+	<!-- begin="click + 500ms" -->
+	<!-- fill="remove" -->
+</svg>
